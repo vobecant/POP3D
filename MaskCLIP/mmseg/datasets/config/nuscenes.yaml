@@ -1,0 +1,69 @@
+# Config related to WaffleIron
+point_backbone:
+  backbone_name: "waffleiron"
+  model_n_in: 3  # Intensity + height + range
+  input_features: [ "intensity", "height", "radius" ]
+  model_n_out: 256
+  depth: 24
+  dim_proj: [ 2 ]
+  grid_shape: [ [ 200, 200 ] ] # Projection in BEV with 50 cm resolution for [-50, 50] FOV
+  fov: [ [ -50, -50, -5 ], [ 50, 50, 5 ] ]
+  num_neighbors: 16
+  voxel_size: 0.2 #0.1
+  max_points: 16000
+
+dataset:
+  dataset_name: "nuscenes"
+  dataset_root: "/nfs/datasets/nuscenes/"
+  training: "train"
+  # transformations to apply to the clouds
+  transforms_clouds: null
+  transforms_mixed: [ "DropCuboids", "ResizedCropOptimized", "FlipHorizontal" ]
+  crop_ratio: [ 1.0, 1.0 ]
+  crop_size: [ 900,1600 ]
+  num_classes: 16
+
+dataloader:
+  batch_size: 2
+  # number of GPUs and CPU threads to use
+  num_gpus: 1
+  num_threads: 24
+  num_epochs: 45
+
+optimizer:
+  lr: 0.001
+  weight_decay: 0.001
+  epoch_warmup: 4
+  min_lr: 0.00001
+
+image_backbone:
+  # which image pretraining to chose among:
+  # 'imagenet','obow', 'pixpro', 'moco_v1', 'moco_v2', 'swav',
+  # 'deepcluster_v2', 'dino', 'moco_coco'
+  image_weights: "moco_v2"
+  # whether to use a projection layer
+  projection: False
+  # which image encoder to use (only imagenet is available with resnet18)
+  images_encoder: "vit_small_p8" # "vit_small_p16"
+  # which image decoder to use
+  # 'bilinear', 'unet', 'fpn', 'semseg', 'nnfe', 'dilation', 'ppkt'
+  decoder: "dilation"
+
+loss:
+  # temperature parameter in the InfoNCE loss
+  NCE_temperature: 0.07
+  # number of positive matches in the InfoNCE loss
+  num_matches: 3072
+
+global:
+  # path to weights to continue a previous training
+  resume_path: null
+  working_dir: "./ppkt_logs"
+  precision: 16
+  num_nodes: 1
+
+odin: True
+num_clusters: 16
+num_iters: 20
+patch_size: 8
+l2norm: True
