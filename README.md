@@ -1,7 +1,5 @@
-# POP3D
-Source code for NeurIPS paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
+# Code for paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
 
-<<<<<<< HEAD
 Welcome to the code for paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images" ([project page](https://vobecant.github.io/POP3D/))
 
 ## environment setup
@@ -217,6 +215,3 @@ Results will be written to `./results/results_${TIMESTAMP}.txt` and to `./result
 
 ### Acknowledgements
 Our code is based on [TPVFormer](https://github.com/wzzheng/TPVFormer) and [MaskCLIP](https://github.com/chongzhou96/MaskCLIP). Many thanks to the authors!
-=======
-We are working on code release right now. Please be patient.
->>>>>>> 7078a7e677374ff0bafcd6944677203060d71721
