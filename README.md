@@ -90,7 +90,7 @@ python tools/maskclip_utils/convert_clip_weights.py --model ViT16 --backbone
 python tools/maskclip_utils/convert_clip_weights.py --model ViT16
 ```
 
-2) Download pre-trained weights from [this link](https://entuedu-my.sharepoint.com/personal/chong033_e_ntu_edu_sg/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fchong033%5Fe%5Fntu%5Fedu%5Fsg%2FDocuments%2FMaskCLIP%20models%2Fmaskclip%5Fplus%5Fvit16%5Fdeeplabv2%5Fr101%2Dd8%5F512x512%5F8k%5Fcoco%2Dstuff164k%2Epth&parent=%2Fpersonal%2Fchong033%5Fe%5Fntu%5Fedu%5Fsg%2FDocuments%2FMaskCLIP%20models&ga=1) and put them to `ckpts/maskclip_plus_vit16_deeplabv2_r101-d8_512x512_8k_coco-stuff164k.pth`
+2) Download pre-trained weights from [this link](https://entuedu-my.sharepoint.com/:u:/g/personal/chong033_e_ntu_edu_sg/EZSrnPaNFwNNqpECYCkgpg4BEjN782MUD7ZUEPXFWSTEXA?e=mOaseS) and put them to `ckpts/maskclip_plus_vit16_deeplabv2_r101-d8_512x512_8k_coco-stuff164k.pth`
 
 3) Run feature extraction:
 ```bash
