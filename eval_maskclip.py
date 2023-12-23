@@ -29,7 +29,6 @@ from dataloader.dataset import get_nuScenes_label_name
 from train import IGNORE_LABEL_SEMANTIC
 from utils.load_save_util import revise_ckpt, revise_ckpt_2, revise_ckpt_linear_probe
 from utils.metric_util import MeanIoU
-from utils.prompt_extractor import PromptExtractor
 from visualization.training import show3d
 
 VIS = True  # False
