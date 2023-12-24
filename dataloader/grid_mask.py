@@ -122,8 +122,6 @@ class GridMask(nn.Module):
         else:
             x = x * mask 
         
-        # import pdb; pdb.set_trace()
-        
         return x.view(n,c,h,w)
 
 if __name__ == '__main__':
