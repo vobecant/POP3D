@@ -746,7 +746,6 @@ def main(local_rank, args):
                     train_pt_labs_agnostic)
 
                 metrics_s_loop = time.time()
-                print(f'len(train_grid_int): {len(train_grid_int)}')
                 for count in range(len(train_grid_int)):
                     # points
                     pt_s = time.time()
@@ -775,9 +774,6 @@ def main(local_rank, args):
                                                             )
                     vo_all_t = time.time() - vo_all_s
 
-                    # to_log = "[LOCAL_RANK={}]inner metrics loop time: {:.2f}s points, {:.2f}s occupied, {:.2f}s all".format(local_rank, pt_t, vo_t, vo_all_t)
-                    # logger.info(to_log)
-                    # print(to_log)
                 metrics_t_loop = time.time() - metrics_s_loop
             else: metrics_t_loop=0.
             metrics_t = time.time() - metrics_s
@@ -850,10 +846,6 @@ def main(local_rank, args):
             data_time_s = time.time()
             global_iter += 1
             time_it_t = time.time() - time_it_s
-
-            if args.debug and i_iter==10:
-                print('Skipping the rest of the training loop!')
-                break
 
 
         ###########################
@@ -989,7 +981,6 @@ def main(local_rank, args):
                                    labels=targets.squeeze().cpu() + 1,
                                    colors=CLASS_COLORS)  # _TINY)
                             plt.show()
-                            print('Delete this plotting!!!')
                         CalMeanIou_pts_clip._after_step(outputs_pts_clip, targets + 1)
 
                         # assign labels to GT OpenCLIP+ features
@@ -1010,7 +1001,6 @@ def main(local_rank, args):
                                    labels=targets.squeeze().cpu() + 1,
                                    colors=CLASS_COLORS)  # _TINY)
                             plt.show()
-                            print('Delete this plotting!!!')
                         CalMeanIou_pts_clip_gt._after_step(outputs_pts_clip_gt, targets + 1)
 
                         with torch.no_grad():
