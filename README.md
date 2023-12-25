@@ -111,6 +111,8 @@ MASKCLIP_DIR=/path/to/POP3D/MaskCLIP
 bash generate_features_slurm.sh ${NUM_GPUS} ${HOURS_TOTAL} ${ACCOUNT} ${MASKCLIP_DIR}
 ``` 
 
+*Note2:* It is expected to get `size mismatch for decode_head.text_embeddings: copying a param with shape torch.Size([171, 512]) from checkpoint, the shape in current model is torch.Size([28, 512]).` We do not use these weights during feature extraction.
+
 ## Training
 
 Our model was trained on 8x NVIIDA A100 GPUs.
