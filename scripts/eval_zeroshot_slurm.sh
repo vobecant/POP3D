@@ -33,7 +33,7 @@ echo ${NAME}
 echo ${OUT_FILE}
 echo ${JOB_FILE}
 
-srun python3 eval_maskclip.py --py-config ${CFG} --resume-from ${CKPT} --maskclip --no-wandb ${EXTRA}" >${JOB_FILE}
+srun python3 eval.py --py-config ${CFG} --resume-from ${CKPT} --maskclip --no-wandb ${EXTRA}" >${JOB_FILE}
 
 echo "run job ${JOB_FILE}"
 echo "write to ${OUT_FILE}"
