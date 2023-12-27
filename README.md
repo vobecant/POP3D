@@ -142,11 +142,11 @@ A) single-GPU (slow):
 CFG=...
 CKPT=...
 ZEROSHOT_PTH=...
- python3 eval_maskclip.py --py-config ${CFG} --resume-from ${CKPT} --maskclip --no-wandb --text-embeddings-path ${ZEROSHOT_PTH}
+ python3 eval.py --py-config ${CFG} --resume-from ${CKPT} --maskclip --no-wandb --text-embeddings-path ${ZEROSHOT_PTH}
 ```
 If you followed the instructions above, you can run:
 ```shell
- python3 eval_maskclip.py --py-config config/pop3d_maskclip_12ep.py --resume-from ./pretrained/pop3d_weights.pth --maskclip --no-wandb --text-embeddings-path ./pretrained/zeroshot_weights.pth
+ python3 eval.py --py-config config/pop3d_maskclip_12ep.py --resume-from ./pretrained/pop3d_weights.pth --maskclip --no-wandb --text-embeddings-path ./pretrained/zeroshot_weights.pth
 ```
 
 B) multi-GPU using SLURM (faster), e.g.:
