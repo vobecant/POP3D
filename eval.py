@@ -258,7 +258,8 @@ def main(local_rank, args):
             # eval_mode=True,
             num_workers=0 if (args.show or args.debug) else 1,
             class_agnostic=False,
-            fill_label_gt=fill_label_gt
+            fill_label_gt=fill_label_gt,
+            
         )
 
     # setup configuration and loss for feature learning
