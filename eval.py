@@ -621,6 +621,7 @@ def main(local_rank, args):
             log_wandb=log2wandb, tag="miou_pts_clip_wRoad/val", step=None)
 
         print(f'val_miou_vox_agn (evaluate voxel agnostic segmentation everywhere): {val_miou_vox_all}')
+        print(f'val_miou_vox_clip_all: {val_miou_vox_clip_all}')
 
     time_val_ep_elapsed = time.time() - time_val_ep_start
     # log metrics to wandb
