@@ -1,6 +1,7 @@
 <div align="center">
 <h2>
-POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"<br>
+![image](https://github.com/vobecant/POP3D/assets/47218173/3a7c925e-1a99-4cc9-b198-d834971f700f)
+POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images<br>
 <p></p>
 
 <p></p>
