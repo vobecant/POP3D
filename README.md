@@ -30,7 +30,17 @@ src="https://img.shields.io/badge/-video-blue.svg?colorA=333&logo=Youtube" heigh
 
 # Code for paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
 
-Welcome to the code for paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images" ([project page](https://vobecant.github.io/POP3D/))
+Welcome to the official implrmrntation of "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
+```
+@article{
+    vobecky2023POP3D,
+    title={POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images},
+    author={Antonin Vobecky and Oriane Siméoni and David Hurych and Spyros Gidaris and Andrei Bursuc and Patrick Pérez and Josef Sivic},
+    booktitle = {Advances in Neural Information Processing Systems},
+    volume = {37},
+    year = {2023}
+}
+```
 
 ## environment setup
 Please, have GCC 5 or higher.
