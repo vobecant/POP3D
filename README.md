@@ -5,7 +5,7 @@ POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"<br>
 
 <p></p>
 
-<a href="[https://wysoczanska.github.io/](https://vobecant.github.io/)">Antonin Vobecky</a>&ensp;
+<a href="https://vobecant.github.io/">Antonin Vobecky</a>&ensp;
 <a href="https://osimeoni.github.io/">Oriane Siméoni</a>&ensp;
 <a href="https://scholar.google.com/citations?hl=en&user=XY1PVwYAAAAJ">David Hurych</a>&ensp;
 <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>&ensp;
