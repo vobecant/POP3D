@@ -20,7 +20,7 @@ src="https://img.shields.io/badge/-Paper-blue.svg?colorA=333&logo=arxiv" height=
 <a href="https://vobecant.github.io/POP3D/"><img 
 src="https://img.shields.io/badge/-Webpage-blue.svg?colorA=333&logo=html5" height=35em></a>
 <a href="https://recorder-v3.slideslive.com/?share=89535&s=2be28040-6fb0-45b9-a6b4-d50731da0417"><img 
-src="https://img.shields.io/badge/-Demo-blue.svg?colorA=333&logo=video" height=35em></a>
+src="https://img.shields.io/badge/-video-blue.svg?colorA=333&logo=video" height=35em></a>
 <p></p>
 
 ![teaser.png](https://github.com/vobecant/vobecant.github.io/blob/main/POP3D/sources/pop3_teaser.png)
