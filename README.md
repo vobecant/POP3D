@@ -1,16 +1,17 @@
 <div align="center">
 <h2>
-CLIP-DINOiser: Teaching CLIP a few DINO tricks<br>
+POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"<br>
 <p></p>
 
 <p></p>
 
-<a href="https://wysoczanska.github.io/">Monika Wysoczańska</a>&ensp;
+<a href="[https://wysoczanska.github.io/](https://vobecant.github.io/)">Antonin Vobecky</a>&ensp;
 <a href="https://osimeoni.github.io/">Oriane Siméoni</a>&ensp;
-<a href="https://michaelramamonjisoa.github.io/">Michaël Ramamonjisoa</a>&ensp;
+<a href="https://scholar.google.com/citations?hl=en&user=XY1PVwYAAAAJ">David Hurych</a>&ensp;
+<a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>&ensp;
 <a href="https://abursuc.github.io/">Andrei Bursuc</a>&ensp;
-<a href="http://staff.ii.pw.edu.pl/~ttrzcins/">Tomasz Trzciński</a>&ensp;
 <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&ensp;
+<a href="https://people.ciirc.cvut.cz/~sivic/">Josef Sivic</a>&ensp;
 
 
 <p></p>
