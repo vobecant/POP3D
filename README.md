@@ -30,7 +30,7 @@ src="https://img.shields.io/badge/-video-blue.svg?colorA=333&logo=Youtube" heigh
 
 # Code for paper "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
 
-Welcome to the official implrmrntation of "POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images"
+Welcome to the official implrmrntation of **POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images**
 ```
 @article{
     vobecky2023POP3D,
